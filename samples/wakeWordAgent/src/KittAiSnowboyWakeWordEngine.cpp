@@ -25,7 +25,7 @@ namespace AlexaWakeWord {
 
 static const std::string  RESOURCE_FILE  = "../ext/resources/common.res";
 static const std::string  MODEL_FILE     = "../ext/resources/alexa.umdl";
-static const std::string  SENSITIVITY    = "0.5";
+// static const std::string  SENSITIVITY    = "0.5";
 static const float        AUDIO_GAIN     = 1.0;
 static const bool         APPLY_FRONTEND = true;
 static const int          MICROSECONDS_BETWEEN_SAMPLES = 100000;
@@ -102,11 +102,10 @@ void KittAiSnowboyWakeWordEngine::initDetector() {
       std::string("Initializing Kitt-Ai Snowboy library ") +
       " | resource file:" + RESOURCE_FILE +
       " | model file: " + MODEL_FILE +
-      " | sensitivity: " + SENSITIVITY +
       " | audio gain: " + std::to_string(AUDIO_GAIN));
 
   m_detector = make_unique<SnowboyDetect>(RESOURCE_FILE, MODEL_FILE);
-  m_detector->SetSensitivity(SENSITIVITY);
+  // m_detector->SetSensitivity(SENSITIVITY);
   m_detector->SetAudioGain(AUDIO_GAIN);
   m_detector->ApplyFrontend(APPLY_FRONTEND);
   m_isDetectorSetup = true;

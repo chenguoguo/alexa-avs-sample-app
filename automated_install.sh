@@ -563,7 +563,7 @@ cp $Kitt_Ai_Loc/snowboy/examples/C++/portaudio/install/include/pa_util.h $Extern
 cp $Kitt_Ai_Loc/snowboy/lib/$OS/libsnowboy-detect.a $External_Loc/lib/libsnowboy-detect.a
 cp $Kitt_Ai_Loc/snowboy/examples/C++/portaudio/install/lib/libportaudio.a $External_Loc/lib/libportaudio.a
 cp $Kitt_Ai_Loc/snowboy/resources/common.res $External_Loc/resources/common.res
-cp $Kitt_Ai_Loc/snowboy/resources/alexa.umdl $External_Loc/resources/alexa.umdl
+cp $Kitt_Ai_Loc/snowboy/resources/alexa/alexa-avs-sample-app/alexa.umdl $External_Loc/resources/alexa.umdl
 
 $Sensory_Loc/alexa-rpi/bin/sdk-license file $Sensory_Loc/alexa-rpi/config/license-key.txt $Sensory_Loc/alexa-rpi/lib/libsnsr.a $Sensory_Loc/alexa-rpi/models/spot-alexa-rpi-20500.snsr $Sensory_Loc/alexa-rpi/models/spot-alexa-rpi-21000.snsr $Sensory_Loc/alexa-rpi/models/spot-alexa-rpi-31000.snsr
 cp $Sensory_Loc/alexa-rpi/include/snsr.h $External_Loc/include/snsr.h
